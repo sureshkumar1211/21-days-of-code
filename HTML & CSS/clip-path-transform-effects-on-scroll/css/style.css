@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+h3 {
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  height: 100vh;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase; }
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../person.jpg);
+  background-attachment: fixed;
+  clip-path: circle(100px at center); }
+
+.container {
+  position: relative;
+  margin-top: 200vh;
+  padding: 40px;
+  line-height: 1.7;
+  z-index: 1;
+  background-color: #fff; }
+  .container h4 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2.5rem; }
+  .container p {
+    text-transform: capitalize;
+    text-align: justify;
+    font-weight: 1.5rem; }
