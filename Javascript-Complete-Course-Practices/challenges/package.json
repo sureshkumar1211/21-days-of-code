@@ -1,0 +1,13 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bmi": "nodemon bmi-calculation.js",
+    "average": "nodemon calculate-average.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

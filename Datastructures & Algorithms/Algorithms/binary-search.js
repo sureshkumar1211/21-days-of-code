@@ -7,7 +7,10 @@
 // 3. create start point beginning of the array  
 // 4. create end point end of the array  
 // 5. create middle point middle of the array => (start + end) / 2  
-// 6. loop through an array until ele is equal to current index or start, end > middle   
+// 6. loop through an array until ele is equal to current index or start, end > middle
+// if ele < arr[middle] substract minus one to middle and assign that value to right     
+// or else add plus one to middle and assign that value to left     
+//      
 // 7. if element is not found return -1 
 // 8. if element is found return middle
 
