@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "binarysearch": "nodemon binary-search.js"
+    "binarysearch": "nodemon binary-search.js",
+    "naivesearch": "nodemon naive-string-search.js"
   },
   "keywords": [],
   "author": "",
