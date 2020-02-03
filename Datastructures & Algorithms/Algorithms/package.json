@@ -8,7 +8,8 @@
 		"binarySearch": "nodemon binary-search.js",
 		"naiveSearch": "nodemon naive-string-search.js",
 		"bubbleSort": "nodemon bubble-sort.js",
-		"selectionSort": "nodemon selection-sort.js"
+		"selectionSort": "nodemon selection-sort.js",
+		"insertionSort": "nodemon insertion-sort.js"
 	},
 	"keywords": [],
 	"author": "",
