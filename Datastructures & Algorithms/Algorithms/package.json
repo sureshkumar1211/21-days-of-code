@@ -1,14 +1,16 @@
 {
-  "name": "algorithms",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "binarysearch": "nodemon binary-search.js",
-    "naivesearch": "nodemon naive-string-search.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "algorithms",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"binarySearch": "nodemon binary-search.js",
+		"naiveSearch": "nodemon naive-string-search.js",
+		"bubbleSort": "nodemon bubble-sort.js",
+		"selectionSort": "nodemon selection-sort.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }
