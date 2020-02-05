@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.4rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+.wrapper > section {
+	background-color: #fafafa;
+	padding: 20px;
+	box-shadow: 3px 10px 12px rgba(0, 0, 0, 0.1);
+}
+.wrapper-2 {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem;
+}
+.wrapper-2 > section {
+	background-color: #478585;
+	padding: 20px;
+}
+
+.wrapper-3 {
+	margin-top: 20px;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 1rem;
+}
+.wrapper-3 > section {
+	background-color: #3caf63;
+	padding: 20px;
+}
