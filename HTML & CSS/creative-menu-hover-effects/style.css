@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "Poppins", sans-serif;
+	background-color: #fafafa;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.nav__item {
+	list-style: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.nav__list:hover .nav__list {
+	color: #fafafa;
+}
