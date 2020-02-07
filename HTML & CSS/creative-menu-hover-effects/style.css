@@ -10,23 +10,82 @@ html {
 	background-color: #fafafa;
 }
 
-.nav {
+/* .nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	overflow: hidden;
+} */
+.nav__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
-
 .nav__item {
 	list-style: none;
-	padding: 10px 20px;
+	/* display: ; */
+	padding: 20px;
+}
+
+.nav__link {
+	list-style: none;
+	padding: 10px 15px;
 	font-size: 20px;
 	font-weight: 500;
+	text-align: center;
 	text-transform: capitalize;
 	cursor: pointer;
 }
 
-.nav__list:hover .nav__list {
-	color: #fafafa;
+.nav__list:hover .nav__link {
+	color: #bbbbbb;
+}
+
+.nav__item:hover .nav__link {
+	color: #000;
+	background-color: #fff;
+}
+
+.nav__link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 150px;
+	text-transform: uppercase;
+	letter-spacing: 400px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.1);
+	transition: letter-spacing 0.5s, left 0.5s;
+	z-index: -1;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.nav__item:hover .nav__link::before {
+	content: attr(data-text);
+	opacity: 1;
+	left: 50%;
+	letter-spacing: 10px;
+	width: 100%;
+	height: 100vh;
+}
+
+.nav__item:hover .nav__link[data-text="Home"]::before {
+	background-color: rgb(85, 134, 53);
+}
+.nav__item:hover .nav__link[data-text="About"]::before {
+	background-color: rgb(53, 148, 185);
+}
+.nav__item:hover .nav__link[data-text="Contact"]::before {
+	background-color: rgb(134, 76, 53);
+}
+.nav__item:hover .nav__link[data-text="Projects"]::before {
+	background-color: rgb(134, 53, 53);
 }
