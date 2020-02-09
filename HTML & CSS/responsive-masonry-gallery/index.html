@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masonry Gallery</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>my office</h1>
+			<div class="grid">
+				<!-- columns -->
+				<div class="grid-col grid-col--1"></div>
+				<div class="grid-col grid-col--2"></div>
+				<div class="grid-col grid-col--3"></div>
+				<div class="grid-col grid-col--4"></div>
+				<!-- items -->
+				<div class="grid-item">
+					<div class="content">
+						<span>office</span>
+					</div>
+					<img src="./img/img-1.jpg" alt="office" />
+				</div>
+				<div class="grid-item">
+					<div class="content">
+						<span>team</span>
+					</div>
+					<img src="./img/img-2.jpg" alt="team" />
+				</div>
+				<div class="grid-item">
+					<div class="content">
+						<span>project</span>
+					</div>
+					<img src="./img/img-3.jpg" alt="project" />
+				</div>
+				<div class="grid-item">
+					<div class="content">
+						<span>carrier</span>
+					</div>
+					<img src="./img/img-4.jpg" alt="carrier" />
+				</div>
+				<div class="grid-item">
+					<div class="content">
+						<span>contact</span>
+					</div>
+					<img src="./img/img-5.jpg" alt="contact" />
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/colcade@0/colcade.js"></script>
+		<script>
+			// selector string as first argument
+			var colc = new Colcade(".grid", {
+				columns: ".grid-col",
+				items: ".grid-item"
+			});
+		</script>
+	</body>
+</html>

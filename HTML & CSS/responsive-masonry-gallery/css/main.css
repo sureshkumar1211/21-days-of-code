@@ -1,0 +1,57 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+/* with flexbox */
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-col {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.grid-col--2, .grid-col--3 {
+  display: none;
+}
+
+.content {
+  position: absolute;
+  margin-top: 0.5rem;
+  padding: 0px 0.5rem;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+/* 2 columns by default, hide columns 2 & 3 */
+/* 3 columns at medium size */
+@media (min-width: 768px) {
+  .grid-col--2 {
+    display: block;
+  }
+  /* show column 2 */
+}
+
+/* 4 columns at large size */
+@media (min-width: 1080px) {
+  .grid-col--3 {
+    display: block;
+  }
+  /* show column 3 */
+}
+/*# sourceMappingURL=main.css.map */
