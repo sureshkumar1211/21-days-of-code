@@ -7,6 +7,16 @@
 		<style>
 			.counter__box {
 				padding: 20px;
+				display: table;
+				color: #fff;
+			}
+			.counter__btn {
+				border: none;
+				padding: 8px 15px;
+				color: #fff;
+				text-transform: capitalize;
+				background-color: #222;
+				cursor: pointer;
 			}
 		</style>
 	</head>
@@ -17,8 +27,16 @@
 			<button class="counter__btn">increament</button>
 		</div>
 		<script src="./js/NumberModel.js"></script>
+		<script src="./js/ElementObserver.js"></script>
+		<script src="./js/ColorHistoryObserver.js"></script>
 		<script>
 			let model = new NumberModel();
+			let eleObserver = new ElementObserver();
+			let histObserver = new ColorHistoryObserver();
+			model.addObserver(eleObserver);
+			model.addObserver(histObserver);
+			eleObserver.incrementEventHandler(model);
+			model.notifyObserver();
 		</script>
 	</body>
 </html>

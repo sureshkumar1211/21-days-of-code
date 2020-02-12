@@ -4,7 +4,7 @@ class NumberModel {
 		this.color = "red";
 		this.observers = [];
 	}
-	increament() {
+	increment() {
 		let colors = ["green", "blue", "grey", "orange", "black"];
 		this.number++;
 		this.color = colors[Math.floor(Math.random() * colors.length)];
