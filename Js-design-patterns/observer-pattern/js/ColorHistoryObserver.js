@@ -4,16 +4,11 @@ class ColorHistoryObserver {
 	}
 
 	update(model) {
-		if (this.recentColors.length > 4) {
-			this.recentColors.pop();
-		}
+		this.recentColors.length > 4 ? this.recentColors.pop() : "";
 		this.recentColors.unshift(model.color);
-		let recentColor = [];
-		if (this.recentColors.length) {
-			this.recentColors.some((color, index) => {
-				recentColor.push(color[0].toUpperCase());
-				return index == 5;
-			});
-		}
+		let recentColor = this.recentColors
+			.map(color => color[0].toUpperCase())
+			.join(" ");
+		console.log("most recent colors were : ", recentColor);
 	}
 }
