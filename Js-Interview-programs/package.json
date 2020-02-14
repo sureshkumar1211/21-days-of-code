@@ -1,0 +1,12 @@
+{
+	"name": "js-interview-programs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "palindrome.js",
+	"scripts": {
+		"palindrome": "nodemon palindrome.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
