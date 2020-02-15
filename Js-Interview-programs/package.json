@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "palindrome.js",
 	"scripts": {
-		"palindrome": "nodemon palindrome.js"
+		"palindrome": "nodemon palindrome.js",
+		"fizzbuzz": "nodemon fizzbuzz.js"
 	},
 	"keywords": [],
 	"author": "",
