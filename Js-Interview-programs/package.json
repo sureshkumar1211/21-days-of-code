@@ -5,7 +5,8 @@
 	"main": "palindrome.js",
 	"scripts": {
 		"palindrome": "nodemon palindrome.js",
-		"fizzbuzz": "nodemon fizzbuzz.js"
+		"fizzbuzz": "nodemon fizzbuzz.js",
+		"anagram": "nodemon anagram.js"
 	},
 	"keywords": [],
 	"author": "",
