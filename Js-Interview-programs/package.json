@@ -6,7 +6,8 @@
 	"scripts": {
 		"palindrome": "nodemon palindrome.js",
 		"fizzbuzz": "nodemon fizzbuzz.js",
-		"anagram": "nodemon anagram.js"
+		"anagram": "nodemon anagram.js",
+		"capitalize": "nodemon capitalize.js"
 	},
 	"keywords": [],
 	"author": "",
